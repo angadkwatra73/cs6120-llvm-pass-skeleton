@@ -15,8 +15,8 @@ include(AddLLVM)
 # Use LLVM's preprocessor definitions, include directories, and library search
 # paths.
 add_definitions(${LLVM_DEFINITIONS})
-include_directories(${LLVM_INCLUDE_DIRS})
-link_directories(${LLVM_LIBRARY_DIRS})
+include_directories(/usr/lib/llvm-18/)
+link_directories(/usr/lib/llvm-18/lib/)
 
 # Our pass lives in this subdirectory.
 add_subdirectory(skeleton)
